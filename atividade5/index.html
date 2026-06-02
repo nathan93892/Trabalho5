@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px #bbb;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.interesses {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.interesses input {
+    width: auto;
+    margin: 0;
+}
+
+.interesses label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+
+    <h2>Cadastro</h2>
+
+    <label>Nome:</label>
+    <input type="text" placeholder="Digite seu nome">
+
+    <label>E-mail:</label>
+    <input type="email" placeholder="Digite seu e-mail">
+
+    <label>Senha:</label>
+    <input type="password" placeholder="Digite sua senha">
+
+    <label>Data de Nascimento:</label>
+    <input type="date">
+
+    <label>Curso:</label>
+    <input type="text" placeholder="Digite seu curso">
+
+    <label>Sexo:</label>
+    <select>
+        <option>Selecione</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Outro</option>
+    </select>
+
+    <label>Interesses:</label>
+
+    <div class="interesses">
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+    </div>
+
+    <label>Comentários:</label>
+    <textarea placeholder="Digite seu comentário"></textarea>
+
+    <label>Upload de Foto:</label>
+    <input type="file" accept="image/*">
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
